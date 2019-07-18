@@ -25,6 +25,13 @@ export const pageList = [
         component: Overview,
     },
     {
+        name: 'Overview Issue',
+        link: '/tfl-safety',
+        nav: false,
+        side: 'none',
+        component: Overview,
+    },
+    {
         name: 'About',
         link: '/about',
         nav: false,
