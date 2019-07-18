@@ -10,6 +10,7 @@ import { /*saveState,*/ loadState} from './components/persist';
 
 import './components/App.css';
 import { pageList } from "../constants/pages.js";
+import Issue from "../pages/issue.js";
 
 class App extends Component {
     constructor(props) {
@@ -48,6 +49,10 @@ class App extends Component {
 
                              
                               {pageList.map(page => this.routeMaker(page))}
+                              <Route
+                                component={Issue}
+                                path='/issue'
+                              />
                               <Route component={() => 
                                 <center>
                                   <p>Sorry page not found</p>

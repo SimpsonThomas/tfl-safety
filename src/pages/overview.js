@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import './overview.css'
 import iconList from "../constants/icons";
 
+import { NavLink } from 'react-router-dom'
+import issues from "../constants/issues";
+
 class Overview extends Component {
     render() {
         document.title = 'Overview'
@@ -11,14 +14,16 @@ class Overview extends Component {
         const preImage = path.hostname === 'simpsonthomas.github.io' && path.pathname !== '/tfl-safety/' ? 'tfl-safety/'
             : ''
 
-        function boxMaker(type, where, when, what) {
+        function boxMaker(type, where, when, what, number) {
             return(
                 <>
                     <div className='box'>
                         <br/>
                         <div className='row'>
                             <div className='col-1'/>
-                            <img src={preImage + 'icons/'+iconList[type]} className='col-3 iconImage' alt={'Icon of '+type}/>
+                            <NavLink className='col-3' to={'issue/'+number}>
+                                <img src={preImage + 'icons/'+iconList[type]} className='iconImage' alt={'Icon of '+type}/>
+                            </NavLink>
                             <div align='left'>
                                 <p><b>Where: </b>{where}</p>
                                 <p><b>When: </b>{when}</p>
@@ -55,10 +60,10 @@ class Overview extends Component {
 
                         <br/><br/>
                         <div className='issueList'>
-                            {boxMaker('dlr', 'Stratford', '19/07/19 13:02', 'Tripped over crooked floor tile')}
-                            {boxMaker('elizabeth', 'Liverpool Street', '20/07/2032 13:02', 'Signal Problems')}
-                            {boxMaker('emirates', 'Greenwich', '19/07/19 13:02', 'Fantastic everyday mode of transport')}
-                            {boxMaker('emirates', 'Greenwich', '19/07/19 13:02', 'Fantastic everyday mode of transport')}
+                            {Object.keys(issues).map(issueNo => {
+                                const issue = issues[issueNo]
+                                return boxMaker(issue.type, issue.where, issue.when, issue.what, issueNo)
+                            })}
                         </div>
 
                     </div>
