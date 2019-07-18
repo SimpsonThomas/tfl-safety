@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import "./navigation.css"; // navigation styles
 
 import 'bootstrap'; // needs to be imported to enable collapsing navbar
+import pageList from "../../constants/pages";
 
 class Navigation extends Component {
     constructor(props) {
@@ -33,6 +34,9 @@ class Navigation extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-sm navbar-dark sticky-top">
+                    <NavLink className=' account' to='/'>
+                        Report Incident
+                    </NavLink>
                     <button 
                         className="navbar-toggler" 
                         type="button" 
@@ -47,14 +51,19 @@ class Navigation extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         {/*Elements that display in the collapsed menu and full width menu*/}
                         <ul className="navbar-nav mr-auto">
-                            {this.navBut({name:'Home', link: '/'})}
+
+                            {pageList.map(page => {
+                                if (page.nav && page.side === 'left') return this.navBut(page)
+                            })}
                             &nbsp; {/*Spacer*/}
                         </ul>
-
                         <span>
                             {/*Right side of navbar*/}
                             <ul className="navbar-nav mr-auto">
-                                {this.navBut({name:'About', link: '/about'})}
+                                
+                            {pageList.map(page => {
+                                if (page.nav && page.side === 'right') return this.navBut(page)
+                            })}
                             </ul>
                         </span>
 

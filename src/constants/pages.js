@@ -1,11 +1,7 @@
 import About from "../simplePages/about";
+import Home from "../simplePages/home";
 
 export const pageList = [
-    {
-        name: 'Home',
-        link: '/',
-        //component: Home,
-    },
     {
         name: 'About',
         link: '/about',
