@@ -5,14 +5,14 @@ import Overview from "../pages/overview";
 export const pageList = [
     {
         name: 'Report Issue',
-        link: '/',
+        link: '/report',
         nav: true,
         side: 'left',
         component: Report,
     },
     {
         name: 'Overview Issue',
-        link: '/',
+        link: '/overview',
         nav: true,
         side: 'right',
         component: Overview,
