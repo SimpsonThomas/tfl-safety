@@ -10,7 +10,7 @@ class Overview extends Component {
             return(
                 <>
                     <div className='box row'>
-                        <img src={'icons/'+iconList[type]} maxHeight='110px' maxWidth='150px' className='col-3'/>
+                        <img src={'icons/'+iconList[type]} height='110px' className='col-3'/>
                         <div>
                             <p><b>Where: </b>{where}</p>
                             <p><b>When: </b>{when}</p>
@@ -26,7 +26,7 @@ class Overview extends Component {
             <div className='container text-center content-center'>
                 <h3>Inicident Dashboard</h3>
                 <div className='row'>
-                    <img src={"/london-map.png"} className='col-5'/>
+                    <img src={"/london-map.png"} height='500px' className='col-5'/>
                     <div className='col-1'/>
                     <div align='center'>
                         <div className="btn-group" role="group" aria-label="Basic example">
