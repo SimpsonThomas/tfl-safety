@@ -36,6 +36,9 @@ class Report extends Component {
                         </div>
                     </div>
 
+                    <button type="button" class="btn btn-outline-primary">Find Me</button>
+                    <br/><br/>
+
                     <div class="form-group row">
                         <label for="email" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10">
