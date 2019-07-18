@@ -9,7 +9,6 @@
 
 .account {
     color: white;
-    font-size: 14px
 }
 
 .account:hover {
@@ -18,7 +17,7 @@
 }
 
 .navbar {
-    background-color: #3d70b2
+    background-color: #33B3D1
 }
 
 a.dropdown-item:hover, button.dropdown-item:hover {
@@ -43,7 +42,7 @@ button.dropdown-item:focus, a.dropdown-item:focus {
 }
 
 .dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:active, .dropdown-toggle:focus {
-    background-color: #3d70b2;
-    border: 0 solid #3d70b2;
+    background-color: #33B3D1;
+    border: 0 solid #33B3D1;
     outline-width: 0;
 }

@@ -34,9 +34,6 @@ class Navigation extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-sm navbar-dark sticky-top">
-                    <NavLink className=' account' to='/'>
-                        Report Incident
-                    </NavLink>
                     <button 
                         className="navbar-toggler" 
                         type="button" 

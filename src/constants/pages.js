@@ -1,12 +1,27 @@
 import About from "../simplePages/about";
-import Home from "../simplePages/home";
+import Report from "../pages/report";
+import Overview from "../pages/overview";
 
 export const pageList = [
     {
-        name: 'About',
-        link: '/about',
+        name: 'Report Issue',
+        link: '/',
+        nav: true,
+        side: 'left',
+        component: Report,
+    },
+    {
+        name: 'Overview Issue',
+        link: '/',
         nav: true,
         side: 'right',
+        component: Overview,
+    },
+    {
+        name: 'About',
+        link: '/about',
+        nav: false,
+        side: 'none',
         component: About,
     },
 ]

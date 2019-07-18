@@ -10,6 +10,9 @@ class About extends Component {
                 <br/>
                 <p>We are totally, completely and <b>UTTERLY UNOFFICIAL</b>, we are not TfL just some people building PoC</p>
                 <p>Do NOT give us any personal data - we are just building something for a Hackathon</p>
+
+                <p>Check us out on Twitter!</p>
+                <a className="twitter-timeline" href="https://twitter.com/TfLSafety?ref_src=twsrc%5Etfw">Tweets by TfLSafety</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 
             </div>
         )
