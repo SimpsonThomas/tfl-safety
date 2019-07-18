@@ -4,7 +4,7 @@ import iconList from "../constants/icons";
 
 class Overview extends Component {
     render() {
-        document.title = 'Report'
+        document.title = 'Overview'
 
         const path = window.location
 
@@ -54,10 +54,12 @@ class Overview extends Component {
                         </div>
 
                         <br/><br/>
-
-                        {boxMaker('dlr', 'Stratford', '19/07/19 13:02', 'Tripped over crooked floor tile')}
-                        {boxMaker('elizabeth', 'Liverpool Street', '20/07/2032 13:02', 'Signal Problems')}
-                        {boxMaker('emirates', 'Greenwich', '19/07/19 13:02', 'Fantastic everyday mode of transport')}
+                        <div className='issueList'>
+                            {boxMaker('dlr', 'Stratford', '19/07/19 13:02', 'Tripped over crooked floor tile')}
+                            {boxMaker('elizabeth', 'Liverpool Street', '20/07/2032 13:02', 'Signal Problems')}
+                            {boxMaker('emirates', 'Greenwich', '19/07/19 13:02', 'Fantastic everyday mode of transport')}
+                            {boxMaker('emirates', 'Greenwich', '19/07/19 13:02', 'Fantastic everyday mode of transport')}
+                        </div>
 
                     </div>
 

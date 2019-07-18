@@ -9,6 +9,16 @@
   background-color: red;
 }
 
+.issueList {
+  height: calc(100vh - 184px);
+  width: 550px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  }
+
 .iconImage {
     max-width: 100px;
     max-height: 100px;
