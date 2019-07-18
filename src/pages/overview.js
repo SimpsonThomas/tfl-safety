@@ -6,11 +6,14 @@ class Overview extends Component {
     render() {
         document.title = 'Report'
 
+        const preImage = window.location.hostname === 'simpsonthomas.github.io' ? 'tfl-safety/'
+            : '/'
+        
         function boxMaker(type, where, when, what) {
             return(
                 <>
                     <div className='box row'>
-                        <img src={'icons/'+iconList[type]} height='110px' className='col-3'/>
+                        <img src={preImage + 'icons/'+iconList[type]} height='110px' className='col-3' alt={'Icon of '+type}/>
                         <div>
                             <p><b>Where: </b>{where}</p>
                             <p><b>When: </b>{when}</p>
@@ -26,7 +29,7 @@ class Overview extends Component {
             <div className='container text-center content-center'>
                 <h3>Inicident Dashboard</h3>
                 <div className='row'>
-                    <img src={"/london-map.png"} height='500px' className='col-5'/>
+                    <img src={preImage + "london-map.png"} height='500px' className='col-5' alt='Map of London'/>
                     <div className='col-1'/>
                     <div align='center'>
                         <div className="btn-group" role="group" aria-label="Basic example">
