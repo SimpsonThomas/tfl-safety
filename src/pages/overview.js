@@ -1,19 +1,22 @@
 import React, { Component } from "react";
 import './overview.css'
+import iconList from "../constants/icons";
 
 class Overview extends Component {
     render() {
         document.title = 'Report'
 
-        function boxMaker(title, text, image) {
+        function boxMaker(title, image, where, when, what) {
             return(
                 <>
                     <div className='box row'>
-                        <img src={image} height='100px' width='auto' className='col-3'/>
+                        <img src={'icons/'+image} height='100px'  className='col-3'/>
                         <div>
                             <h5>{title}</h5>
                             <hr/>
-                            <p>{text}</p>
+                            <p><b>Where: </b>{where}</p>
+                            <p><b>When: </b>{when}</p>
+                            <p><b>What: </b>{what}</p>
                         </div>
                     </div>
                     <br/>
@@ -37,10 +40,7 @@ class Overview extends Component {
 
                         <br/><br/>
 
-                        {boxMaker('Twitter', 'Test', '/icons/twitter.png')}
-                        {boxMaker('Twitter', 'Test', '/icons/twitter.png')}
-                        {boxMaker('Twitter', 'Test', '/icons/twitter.png')}
-                        {boxMaker('Twitter', 'Test', '/icons/twitter.png')}
+                        {boxMaker('Twitter', iconList.cycles, 'Stratford International', '19/07/19 13:02', 'Tripped over crooked floor tile')}
 
                     </div>
 
