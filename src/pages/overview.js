@@ -12,13 +12,25 @@ class Overview extends Component {
         function boxMaker(type, where, when, what) {
             return(
                 <>
-                    <div className='box row'>
-                        <img src={preImage + 'icons/'+iconList[type]} height='110px' className='col-3' alt={'Icon of '+type}/>
-                        <div>
-                            <p><b>Where: </b>{where}</p>
-                            <p><b>When: </b>{when}</p>
-                            <p><b>What: </b>{what}</p>
+                    <div className='box'>
+                        <br/>
+                        <div className='row'>
+                            <div className='col-1'/>
+                            <img src={preImage + 'icons/'+iconList[type]} className='col-3 iconImage' alt={'Icon of '+type}/>
+                            <div align='left'>
+                                <p><b>Where: </b>{where}</p>
+                                <p><b>When: </b>{when}</p>
+                                <p><b>What: </b>{what}</p>
+                            </div>
                         </div>
+
+                        <div className="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" className="btn btn-danger">Police</button>
+                            <button type="button" className="btn btn-outline-info">Station Control</button>
+                            <button type="button" className="btn btn-outline-info">Long-term</button>
+                            <button type="button" className="btn btn-outline-danger">Delete</button>
+                        </div>
+                        <br/><br/>
                     </div>
                     <br/>
                 </>
@@ -43,7 +55,7 @@ class Overview extends Component {
 
                         {boxMaker('dlr', 'Stratford', '19/07/19 13:02', 'Tripped over crooked floor tile')}
                         {boxMaker('elizabeth', 'Liverpool Street', '20/07/2032 13:02', 'Signal Problems')}
-                        {boxMaker('emirates', 'Greenwich', '19/07/19 13:02', 'Just a fantastic everyday mode of transport')}
+                        {boxMaker('emirates', 'Greenwich', '19/07/19 13:02', 'Fantastic everyday mode of transport')}
 
                     </div>
 
