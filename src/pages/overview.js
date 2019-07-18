@@ -6,7 +6,7 @@ class Overview extends Component {
     render() {
         document.title = 'Report'
 
-        const preImage = window.location.hostname === 'simpsonthomas.github.io' ? 'tfl-safety/'
+        const preImage = window.location.hostname === 'simpsonthomas.github.io' && window.location.pathname !== '/tfl-safety' ? 'tfl-safety/'
             : '/'
         
         function boxMaker(type, where, when, what) {
