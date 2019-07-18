@@ -3,12 +3,13 @@ import { Route, Switch, Redirect} from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Components to display
-//import Navigation from './navigation/navigation.js';
+import Navigation from './navigation/navigation.js';
 
 // state functions
 import { saveState, loadState} from './components/persist';
 
 import './components/App.css';
+import { pageList } from "../constants/pages.js";
 
 class App extends Component {
     constructor(props) {
@@ -27,12 +28,7 @@ class App extends Component {
         return(
             <Route
                 key={item.link}
-                render = {(routeProps) => (
-                    <item.component {...routeProps}
-                        account={this.state.account}
-                        adminView={this.state.adminView}
-                        updateAccount={item.accounts ? this.updateAccount : ''}/>
-                )}
+                component={item.component}
                 exact path={item.link}
             />
         )
@@ -44,13 +40,13 @@ class App extends Component {
                 <>  
                   <>
                       <div className='body'>
-                          {/*<Navigation account={this.state.account} adminView={this.state.adminView} adminSwitch={this.adminSwitch}></Navigation>*/}
+                          <Navigation></Navigation>
                           <br/>
                           <Switch>
                               {/* Render page based on the constants*/}
 
                              
-    
+                              {pageList.map(page => this.routeMaker(page))}
                               <Route component={() => 
                                 <center>
                                   <p>Sorry page not found</p>

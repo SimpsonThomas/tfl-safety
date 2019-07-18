@@ -1,0 +1,49 @@
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    color: black;
+    background-color: black
+}
+
+.account {
+    color: white;
+    font-size: 14px
+}
+
+.account:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    background-color: #3d70b2
+}
+
+a.dropdown-item:hover, button.dropdown-item:hover {
+    background-color: #f4f7fb;
+}
+
+button.dropdown-item:focus, a.dropdown-item:focus {
+    background-color: #5596e6;
+    color: white;
+}
+
+.navUser {
+    fill: rgba(255,255,255,.5);
+}
+
+.nav-item:hover .navUser, .navUser:hover {
+    fill: rgba(255,255,255,.75);
+}
+
+.nav-item:active .navUser, .nav-item.show .navUser {
+    fill: rgba(255,255,255);
+}
+
+.dropdown-toggle, .dropdown-toggle:hover, .dropdown-toggle:active, .dropdown-toggle:focus {
+    background-color: #3d70b2;
+    border: 0 solid #3d70b2;
+    outline-width: 0;
+}
