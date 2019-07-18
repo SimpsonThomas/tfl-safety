@@ -1,0 +1,9 @@
+---
+applications:
+- name:    tfl-safety
+  memory: 128M
+  buildpack: sdk-for-nodejs
+  command: npm run start
+  env:
+    OPTIMIZE_MEMORY: true
+    NODE_MODULES_CACHE: false
