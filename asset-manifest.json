@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tfl-safety/static/css/main.f684a9b9.chunk.css",
+    "main.js": "/tfl-safety/static/js/main.8e0ca6a7.chunk.js",
+    "main.js.map": "/tfl-safety/static/js/main.8e0ca6a7.chunk.js.map",
+    "runtime~main.js": "/tfl-safety/static/js/runtime~main.e7860793.js",
+    "runtime~main.js.map": "/tfl-safety/static/js/runtime~main.e7860793.js.map",
+    "static/css/2.266e55a5.chunk.css": "/tfl-safety/static/css/2.266e55a5.chunk.css",
+    "static/js/2.2f41353e.chunk.js": "/tfl-safety/static/js/2.2f41353e.chunk.js",
+    "static/js/2.2f41353e.chunk.js.map": "/tfl-safety/static/js/2.2f41353e.chunk.js.map",
+    "index.html": "/tfl-safety/index.html",
+    "precache-manifest.644b5279f8beca05d39f375cb8ece607.js": "/tfl-safety/precache-manifest.644b5279f8beca05d39f375cb8ece607.js",
+    "service-worker.js": "/tfl-safety/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/tfl-safety/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.f684a9b9.chunk.css.map": "/tfl-safety/static/css/main.f684a9b9.chunk.css.map"
+  }
+}
