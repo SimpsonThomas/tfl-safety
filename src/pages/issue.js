@@ -23,6 +23,13 @@ class Issue extends Component {
                 <h3>{'Issue #'+fakeNumber}</h3>
                 <hr/>
                 <img src={preImage + 'icons/'+iconList[issue.type]} className='iconImage' alt={'Icon of '+issue.type}/>
+                <br/><br/>
+
+                <div align='center'>
+                    <p><b>Where: </b>{issue.where}</p>
+                    <p><b>When: </b>{issue.when}</p>
+                    <p><b>What: </b>{issue.what}</p>
+                </div>
             </div>
         )
     }
