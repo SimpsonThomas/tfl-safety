@@ -6,14 +6,12 @@ class Overview extends Component {
     render() {
         document.title = 'Report'
 
-        function boxMaker(title, image, where, when, what) {
+        function boxMaker(type, where, when, what) {
             return(
                 <>
                     <div className='box row'>
-                        <img src={'icons/'+image} height='100px'  className='col-3'/>
+                        <img src={'icons/'+iconList[type]} maxHeight='110px' maxWidth='150px' className='col-3'/>
                         <div>
-                            <h5>{title}</h5>
-                            <hr/>
                             <p><b>Where: </b>{where}</p>
                             <p><b>When: </b>{when}</p>
                             <p><b>What: </b>{what}</p>
@@ -40,7 +38,9 @@ class Overview extends Component {
 
                         <br/><br/>
 
-                        {boxMaker('Twitter', iconList.cycles, 'Stratford International', '19/07/19 13:02', 'Tripped over crooked floor tile')}
+                        {boxMaker('dlr', 'Stratford', '19/07/19 13:02', 'Tripped over crooked floor tile')}
+                        {boxMaker('elizabeth', 'Liverpool Street', '20/07/2032 13:02', 'Signal Problems')}
+                        {boxMaker('emirates', 'Greenwich', '19/07/19 13:02', 'Just a fantastic everyday mode of transport')}
 
                     </div>
 
