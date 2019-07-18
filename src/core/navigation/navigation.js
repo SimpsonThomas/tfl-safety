@@ -7,9 +7,9 @@ import 'bootstrap'; // needs to be imported to enable collapsing navbar
 import pageList from "../../constants/pages";
 
 class Navigation extends Component {
-    constructor(props) {
+    /*constructor(props) {
         super(props)
-    }
+    }*/
 
     /**
      * Generates the buttons for the navbar
@@ -51,6 +51,7 @@ class Navigation extends Component {
 
                             {pageList.map(page => {
                                 if (page.nav && page.side === 'left') return this.navBut(page)
+                                else return null
                             })}
                             &nbsp; {/*Spacer*/}
                         </ul>
@@ -60,6 +61,7 @@ class Navigation extends Component {
                                 
                             {pageList.map(page => {
                                 if (page.nav && page.side === 'right') return this.navBut(page)
+                                else return null
                             })}
                             </ul>
                         </span>

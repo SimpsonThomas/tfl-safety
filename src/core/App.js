@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Route, Switch, Redirect} from "react-router-dom";
+import { Route, Switch, /*Redirect*/} from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Components to display
 import Navigation from './navigation/navigation.js';
 
 // state functions
-import { saveState, loadState} from './components/persist';
+import { /*saveState,*/ loadState} from './components/persist';
 
 import './components/App.css';
 import { pageList } from "../constants/pages.js";
