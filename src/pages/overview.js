@@ -26,8 +26,8 @@ class Overview extends Component {
 
                         <div className="btn-group" role="group" aria-label="Basic example">
                             <button type="button" className="btn btn-danger">Police</button>
-                            <button type="button" className="btn btn-outline-info">Station Control</button>
-                            <button type="button" className="btn btn-outline-info">Long-term</button>
+                            <button type="button" className="btn btn-outline-secondary">Station Control</button>
+                            <button type="button" className="btn btn-outline-secondary">Long-term</button>
                             <button type="button" className="btn btn-outline-danger">Delete</button>
                         </div>
                         <br/><br/>
