@@ -46,7 +46,7 @@ class Overview extends Component {
 
         return (
             <div className='container text-center content-center'>
-                <h3>Inicident Dashboard Testing</h3>
+                <h3>Hermes Dashboard</h3>
                 <div className='row'>
                     <img src={preImage + "london-map.png"} height='500px' className='col-5' alt='Map of London'/>
                     <div className='col-1'/>
